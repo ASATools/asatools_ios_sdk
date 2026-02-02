@@ -39,6 +39,7 @@ extension ASATools {
         @objc public let creativeSetId: NSNumber? // may be nil if you are not using custom creative set
         @objc public let conversionType: ConversionType
         @objc public let claimType: ClaimType
+        @objc public let supplyPlacement: String?
         @objc public let region: String
         @objc public let campaignName: String
         @objc public let adGroupName: String
@@ -51,6 +52,7 @@ extension ASATools {
                 creativeSetId: Int?,
                 conversionType: ConversionType,
                 claimType: ClaimType,
+                supplyPlacement: String?,
                 region: String,
                 campaignName: String,
                 adGroupName: String,
@@ -63,6 +65,7 @@ extension ASATools {
             self.conversionType = conversionType
             self.claimType = claimType
             self.region = region
+            self.supplyPlacement = supplyPlacement
             self.campaignName = campaignName
             self.adGroupName = adGroupName
             self.keywordName = keywordName

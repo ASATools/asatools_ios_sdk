@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASATools'
-  s.version          = '1.5.1'
+  s.version          = '1.5.2'
   s.summary          = 'iOS library for Apple Search Ads attribution and ROAS measurement'
 
   s.description      = <<-DESC

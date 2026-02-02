@@ -331,6 +331,7 @@ public class ASATools: NSObject {
                 let keywordId: Int? = responseJSON["keyword_id"] as? Int
                 let creativeSetId: Int? = responseJSON["creative_set_id"] as? Int
                 let keywordName: String? = responseJSON["keyword_name"] as? String
+                let supplyPlacement: String? = responseJSON["supply_placement"] as? String
                 
                 let attributionResult = AttributionResult(
                     organizationId: organizationId,
@@ -340,6 +341,7 @@ public class ASATools: NSObject {
                     creativeSetId: creativeSetId,
                     conversionType: conversionType,
                     claimType: claimType,
+                    supplyPlacement: supplyPlacement,
                     region: region,
                     campaignName: campaignName,
                     adGroupName: adGroupName,
